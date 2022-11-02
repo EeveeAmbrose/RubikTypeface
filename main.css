@@ -1,0 +1,628 @@
+/* ================ RESETS ==================*/
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Rubik', sans-serif;
+}
+
+hr {
+    margin: 0;
+}
+
+h2 {
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+/* ============== GLOBALS ===================*/
+
+.content_width {
+    width: 100%;
+    height:100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.flex {
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ============ GLOBAL PROJECT SPECIFIC ================*/
+
+.content_rule {
+    border: 3px solid;
+    border-radius: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden; 
+}
+
+/* ========================= HEADER ============================*/
+
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: white;
+    z-index: 9999;
+}
+
+.tiny-cube {
+    position: absolute;
+    top: 0;
+    left: 16vw;
+}
+
+.headerimage {
+    width: 10vw;
+}
+
+header .content_width {
+    flex-direction: column;
+    align-items: center;
+}
+
+.main_nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width:100%;
+    width: 100%; /*why do i need both of these again?*/
+    padding: 10px auto 10px;
+    height: 2vw;
+    font-size: 26px;
+}
+
+.main_nav ul li {
+    font-family: 'Rubik', sans-serif;
+    font-weight: bolder;
+    margin-left: 50px;
+}
+
+.main_nav ul li:hover {
+    opacity: .5;}
+
+.main_nav li:first-child {
+    margin-left: 0px;
+}
+
+#a {
+    color: #FFC906;
+}
+
+#b {
+    color: #434DA1;
+}
+
+#c {
+    color: #F26640;
+}
+
+#d {
+    color: #009A4D;
+}
+
+#e {
+    color: #EE2D2F;
+}
+
+#f {
+    color: #B1B3B6;
+}
+
+/* =========================== INTRO SECTION ==============================*/
+
+.intro_section {
+    background: url(images/-_stars-bckgrnd.svg), linear-gradient(to bottom,  #0e1033 0%,#51244c 100%);
+    max-width: 100vw;
+    width: 100%;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    margin-top: 3vw;
+}
+
+.rubik_city {
+    z-index: 99;
+}
+
+.intro_section h1 {
+    font-weight: bolder;
+    position: relative;
+    top: 8vh;
+    font-size: 175px;
+    color: white;
+}
+
+/* ================================ INFO SECTION ===========================*/
+
+#info {
+    margin-top: -21vw;
+    background: #151723 url(images/-_street-bckgrnd.svg);
+    width: 100vw;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 24vw;
+    padding-bottom: 100px;
+    background-size: 95px 95px;
+    background-position: top center;
+}
+
+#info img, #info div {
+    width: 45%;
+}
+
+#info h2 {
+    font-family: 'Rubik', sans-serif;
+    font-weight: bold;
+    color: #FFC906;
+    font-size: 56px;
+}
+
+#info p {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    color: #FFC906;
+    font-size: 24px;
+}
+
+#info div #info_rule {
+    border-color:  #FFC906;
+    width: 130px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+.section_content {
+    flex-direction: column;
+    text-align: left;
+    align-items: flex-start;
+}
+
+.cube_outline {
+    max-width: 25%;
+}
+
+/* ================================ DESIGNER SECTION ===========================*/
+
+#designer {
+    justify-content: space-between;
+}
+
+#designer .info-d {
+    height: 100%;
+    padding: 161px 250px;
+    position: relative;
+    width: 70%;
+}
+
+#designer .face {
+    position: relative;
+}
+
+
+#designer .face_wrapper:before {
+    content: "";
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100vw;
+    transform: translateX(-100%);
+    background: url(images/-_rpt-lblue-cubes.svg);
+    background-size: 38.2px 38.2px;
+    background-position: right top;
+    position: absolute;
+    z-index: -1;
+}
+
+/* #designer .face_wrapper:after {
+    content: "";
+    left: 0;
+    bottom: 0;
+    height: 40px;
+    width: 100%;
+    background-color: red;
+    position: absolute;
+} */
+
+.face_wrapper {
+    position: absolute;
+    display: block;
+    height: 100%;
+    right: 0;
+    padding-bottom: 75.16%;
+}
+
+#designer img{
+    height: 100%;
+    max-height: 550px;
+    /* position: absolute;
+    display:block;
+    height: 100%;
+    right: 0;
+    padding-bottom: 75.16%; */
+}
+
+#designer_rule {
+    border-color:  #434DA1;
+    width: 290px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+#designer h2 {
+    font-family: 'Rubik', sans-serif;
+    font-weight: bold;
+    color: #434DA1;
+    font-size: 56px;
+}
+#designer p {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    color: #434DA1;
+    font-size: 24px;
+}
+
+/* ================================ ANATOMY SECTION ===========================*/
+
+#anatomy {
+    background: url(images/-_anatomy-bckgrnd.png);
+    align-content: center;
+    justify-content: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: -2px;
+}
+
+#anatomy img {
+    width: 75%;
+    padding: 78px;
+}
+
+/* ============================== WEIGHTS SECTION ==============================*/
+
+#weights {
+    background: url(images/-_weights-tile.svg);
+    /* align-items: center;
+    flex-direction: column; */
+    background-size: 324px 324px;
+   box-shadow: 1px 20px 40px #000;
+    position: relative;
+    z-index: 100;
+}
+
+#weights h2 {
+    font-family: 'Rubik', sans-serif;
+    color: #ffffff;
+    font-size: 124px;
+    padding-top: 3%;
+    padding-bottom: 1%;
+    text-align: center;
+}
+
+#weights p {
+    text-align: center;
+    color: white;
+    font-size: 32px;
+    padding-bottom: 3%;
+}
+
+#weights ul {
+    list-style: none;
+    color: #ffffff;
+    display: flex;
+    text-align: center;
+    max-width: 42%;
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: wrap;
+    text-align: center;
+    padding-bottom: 3%;
+    padding-top: 0;
+}
+
+#weights ul li {
+    padding: 0 0 3% 3%;
+    width: 20%;
+    font-size: 24px;
+}
+
+#weights ul li:first-child {
+    padding: 0 0 3% 0%;
+}
+
+#weights ul li:hover {
+    opacity: .5;
+}
+
+#weights ul li.light, #weights .light {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+    color: #ffffff;
+}
+
+#weights ul li.regular, #weights .regular {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+#weights ul li.medium, #weights .medium {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+#weights ul li.bold, #weights .bold {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+#weights ul li.black, #weights .black {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 900;
+    color: #ffffff;
+}
+
+#weights ul li.light_italic, #weights .light_italic {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    color: #ffffff;
+}
+
+#weights ul li.italic, #weights .italic {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    color: #ffffff;
+}
+
+#weights ul li.medium_italic, #weights .medium_italic {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    font-style: italic;
+    color: #ffffff;
+}
+
+#weights ul li.bold_italic, #weights .bold_italic {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    color: #ffffff;
+}
+
+#weights ul li.black_italic, #weights .black_italic {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 900;
+    font-style: italic;
+}
+
+/* ========================= LAST SECTION ===========================================*/
+
+.last_section {
+    background-image: url(images/-_last-bkcgrnd.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin-top: -16px;
+}
+
+.last_section img {
+    margin-top: 1vw;
+}
+
+.falling_cube21 {
+    position: absolute;
+    width: 4%;
+    top: 50%;
+    left: 94%;
+}
+
+.falling_cube22 {
+    position: absolute;
+    width: 4%;
+    top: 51%;
+    left: 37%;
+}
+
+.falling_cube23 {
+    position: absolute;
+    width: 4%;
+    top: 4%;
+    left: 65%;
+}
+
+.falling_cube24 {
+    position: absolute;
+    width: 4%;
+    top: 55%;
+    left: 80%
+}
+
+.falling_cube25 {
+    position: absolute;
+    width: 4%;
+    top: 33%;
+    left: 67%;
+}
+
+.falling_cube26 {
+    position: absolute;
+    width: 4%;
+    top: 20%;
+    left: 17%;
+}
+
+.falling_cube27 {
+    position: absolute;
+    width: 4%;
+    top: -3%;
+    left: 27%;
+}
+
+.falling_cube31 {
+    position: absolute;
+    width: 6%;
+    top: 10%;
+    left: 90%;
+}
+
+.falling_cube32 {
+    position: absolute;
+    width: 6%;
+    top: 49%;
+    left: 58%;
+}
+
+.falling_cube33 {
+    position: absolute;
+    width: 6%;
+    top: 55%;
+    left: 6%;
+}
+
+.falling_cube34 {
+    position: absolute;
+    width: 6%;
+    top: 19%;
+    left: 72%;
+}
+
+.falling_cube35 {
+    position: absolute;
+    width: 6%;
+    top: 25%;
+    left: 27%;
+}
+
+.falling_cube36 {
+    position: absolute;
+    width: 6%;
+    top: -3%;
+    left: 79%;
+}
+
+.falling_cube41 {
+    position: absolute;
+    width: 8%;
+    top: 30%;
+    left: 85%;
+}
+
+.falling_cube42 {
+    position: absolute;
+    width: 8%;
+    top: -1%;
+    left: 6%;
+}
+
+.falling_cube51 {
+    position: absolute;
+    width: 10%;
+    top: 35%;
+    left: 4%;
+}
+
+.falling_cube52 {
+    position: absolute;
+    width: 10%;
+    top: -8%;
+    left: 40%;
+}
+
+
+/* ---------------------------- ALPHABET --------------------------*/
+
+#alphabet.content_width {
+    flex-direction: column;
+    align-items: center;
+} 
+
+#alphabet h2 {
+    font-family: 'Rubik', sans-serif;
+    color: #EE2D2F;
+    font-size: 56px;
+    padding: 8% 3% 0% 3%;
+    text-align: center;
+    text-shadow: 0px 40px 30px #000;
+}
+
+#alphabet p {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    color: #EE2D2F;
+    font-size: 42px;
+    margin-top: 1%;
+    text-shadow: 0px 15px 30px #000;
+}
+
+#alphabet_rule {
+    border-color:  #EE2D2F;
+    width: 375px;
+}
+
+/*--------------------------- NUMBERS ---------------------------*/
+
+#numbers.content_width {
+    flex-direction: column;
+    align-items: center;
+    margin: 0 0 10vw 0;
+} 
+
+#numbers h2 {
+    font-family: 'Rubik', sans-serif;
+    color: #B1B3B6;
+    font-size: 56px;
+    padding: 5% 3% 0% 3%;
+    text-align: center;
+    text-shadow: 0px 40px 30px #000;
+}
+
+#numbers p {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    color: #B1B3B6;
+    font-size: 52px;
+    text-align: center;
+    margin-top: 1%;
+    text-shadow: 0px 15px 30px #000;
+}
+
+#numbers_rule {
+    border-color:  #B1B3B6;
+    width: 375px;
+
+}
